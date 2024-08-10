@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://leonwebsolution.github.io/vasai/",
+  "homepage": "https://leonwebsolution.github.io/ELKUS/",
   "scripts": {
     "deploy": "gh-pages -d dist"
   },

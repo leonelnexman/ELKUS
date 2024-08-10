@@ -103,6 +103,9 @@ nav button:hover{
         max-height: 100vh;
         overflow: hidden;
     }
+    .swiper-slide{
+        cursor: grab;
+    }
 }
 .content{
     width: 90rem;
@@ -457,6 +460,7 @@ nav button:hover{
 .section6{
     padding-top: 7rem;
     overflow: hidden !important;
+    padding-bottom: 5rem;
     .section__head{
         position: absolute;
         z-index: 777;
@@ -486,19 +490,25 @@ nav button:hover{
   }
   
   .custom-slider {
-    overflow: hidden;
+    // overflow: hidden;
+    display: flex;
+    justify-content: center;
     .custom-slider-wrapper {
       display: flex;
       align-items: center; // Выстраиваем контент по вертикали по центру
       justify-content: center; // Выстраиваем контент по горизонтали по центру
-      overflow: hidden; // Запрещаем скролл
-    width: 100%;
+      overflow: hidden;
+      padding-top: 10rem;
+        width: 65.5%;
+        height: 85vh;
+        
       .custom-slider-items {
         display: flex;
+        width: 1;
         perspective: calc(var(--index) * 35); // Перспектива для 3D-эффектов
         .custom-slider-item {
-          width: 23.3rem; // Ширина элемента
-          height: 65vh; // Высота элемента
+            width: 15rem;
+            height: 60vh;
           background-size: cover; // Масштабирование изображения по размеру элемента
           background-position: center; // Центрируем изображение
           cursor: pointer; // Указываем, что элемент кликабельный
@@ -581,6 +591,13 @@ nav button:hover{
         }
       }
     }
+  }
+
+  .inter{
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .item11{
@@ -729,4 +746,30 @@ nav button:hover{
             } 
         }
     }
+  }
+  .information__btn{
+    transition: all 0.3s;
+  }
+  .information__btn:hover{
+    background: #000;
+    color: #fff;
+  }
+  .projects__action-btn{
+    position: relative;
+    z-index: 777;
+    transition: all 0.3s;
+  }
+
+  .projects__action-btn:hover{
+    background: #000;
+    color: #fff !important;
+    border-color: #000;
+  }
+  .job__btn{
+    transition: all 0.3s;
+  }
+  .job__btn:hover{
+    background: #000;
+    color: #fff !important;
+    border-color: #000;
   }
