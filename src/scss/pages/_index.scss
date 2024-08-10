@@ -1,0 +1,732 @@
+.main-section{
+    overflow: hidden !important;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    video{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    &__logo{
+        color: $darksystem;
+        font: 600 12.5rem $font-family;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 20rem;
+    }
+    &__content{
+        position: relative;
+        z-index: 777;
+    }
+    &__logo-sublogo{
+        font: 500 1.5rem $font-family;
+        text-transform: uppercase;
+        color: $darksystem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        span{
+            display: block;
+            margin-top: -1rem;
+        }   
+    }
+}
+.navv{
+    position: relative;
+    z-index: 777;
+    display: flex;
+    align-items: center;
+    gap: 19rem;
+    justify-content: center;
+    a{
+        font: 400 1.5rem $font-family;
+        text-transform: uppercase;
+        text-align: center;
+        color: $darksystem;  
+    }
+}
+.fp-overflow{
+    overflow-y: auto;
+}
+
+
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 12%;
+    z-index: 999;
+}
+
+.logo a{
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.logo a span{
+    color: aqua;
+}
+
+nav button{
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+nav button:hover{
+    box-shadow: 3px 3px 5px #fff;
+}
+
+.section2{
+    background: url('../images/bg.png');
+    background-size: cover;
+    .container{
+        max-height: 100vh;
+        overflow: hidden;
+    }
+}
+.content{
+    width: 90rem;
+    height: 100vh;
+    cursor:grab;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.content2{
+    cursor: grab;
+}
+.content3{
+    cursor: grab;
+}
+.content4{
+    cursor: grab;
+}
+.content5{
+    cursor: grab;
+}
+.content6{
+    cursor: grab;
+}
+
+.information{
+    display: flex;
+}
+
+.head{
+    max-width: 71rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section2{
+    overflow: hidden;
+    max-height: 100vh;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #fff;
+    padding-top: 7rem;
+}
+
+.head h1{
+    font: 700 10rem $second-family; 
+    letter-spacing: 0.05em;
+    color: $brand;
+    margin-bottom: 5rem;
+}
+
+.head .information__descr{
+    font: 400 1.8rem $font-family;
+    color: $darksystem;
+    margin-bottom: 5rem;
+}
+
+.information__descr-name{
+    font: 600 2.5rem $font-family;
+    color: $darksystem;
+    margin-bottom: 1.5rem; 
+}
+
+.information__btn{
+    font: 400 1.8rem $font-family;
+    letter-spacing: 0.25em;
+    color: #000;
+    padding: 2.5rem 8.9rem;
+    background: $whitesystem;
+}
+
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after{
+    display: none;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after{
+    display: none;
+}
+
+
+.swiper_arrow{
+    position: absolute;
+    top: 50% !important;
+    left: 5% !important;
+    width: 3.8rem;
+    height: 3.8rem;
+}
+
+.slider-num{
+    position: absolute;
+    top: 50% !important;
+    left: 88.5% !important;
+    font: 300 2.5rem $font-family;
+    text-transform: uppercase;
+    text-align: center;
+    color: $darksystem;
+    margin-top: -1.7rem;
+}
+
+.swiper_arrow svg{
+    width: 3.8rem;
+    height: 3.8rem;
+}
+.swiper-button-prev{
+    left: 85% !important;
+}
+.swiper-button-next{
+    left: 95% !important;
+}
+
+.swiper-slide{
+    position: relative;
+    .container{
+        display: flex;
+    }
+}
+
+.information__img{
+    display: block;
+    width: 77.8rem;
+    margin-left: -25rem;
+}
+
+.txt-img{
+    position: absolute;
+    top: 0rem;
+    right: 0;
+    width: 105rem;
+    margin-top: -5rem;
+}
+
+.section2{
+    .section__head{
+        position: absolute;
+    }
+}
+
+.section__head{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 3rem;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .section__logo{
+        font: 600 2.5rem $font-family;
+        text-transform: uppercase;
+        text-align: center;
+        color: $darksystem;  
+    }
+    .page__name{
+        font: 400 1.5rem $font-family;
+        text-transform: uppercase;
+        text-align: center;
+        color: $darksystem;   
+    }
+}
+
+.projects{
+    padding-top: 10rem;
+    padding-bottom: 3.5rem;
+    display: block !important;
+    &__item{
+        transition: all 0.7s;
+        opacity: 0;
+        transform: translateY(7rem);
+        &.view{
+            opacity: 1;
+            transform: translateY(0);
+        }
+        &.item1{
+            transition-delay: 0.1s; 
+        }
+        &.item2{
+            transition-delay: 0.5s; 
+         }
+         &.item3{
+            transition-delay: 0.3s; 
+         }
+         &.item4{
+            transition-delay: 0.7s; 
+         }
+         &.item5{
+            transition-delay: 0.9s; 
+         }
+    }
+    &__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    &__title{
+        font: 600 6.5rem $second-family;
+        letter-spacing: 0.05em;
+        color: $darksystem;
+        margin-bottom: 9rem;
+    }
+    &__action{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: 85rem;
+        background: $brand;
+        &.light{
+            background: #96cab2;
+        }
+        &.white{
+            background: #fff;
+            .projects__action-title{
+                color: $darksystem; 
+            }
+            .projects__action-descr{
+                color: $darksystem; 
+            }
+            .projects__action-btn{
+                color: $darksystem;
+                border-color: $darksystem;
+            }
+        }
+    }
+    &__action-content{
+        width: 48.2rem;
+        padding: 5rem;
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    &__action-title{
+        font: 600 2.4rem $second-family;
+        letter-spacing: 0.05em;
+        color: $whitesystem;
+        margin-bottom: 1.5rem; 
+    }
+    &__action-descr{
+        font: 400 1.4rem $font-family;
+        color: $whitesystem;
+        opacity: 0.5;
+        margin-bottom: 3.5rem;
+    }
+    &__action-btn{
+        padding: 2.15rem 3.5rem;
+        font: 400 1.4rem $font-family;
+        color: $whitesystem;
+        border: 2px solid $whitesystem;
+        border-radius: 2.5rem;
+        letter-spacing: 0.25em;
+    }
+    &__action-img{
+        width: 37.5rem;
+        border-radius: 3rem 0 0rem 3rem;
+    }
+    &__item.big{
+        width: 85rem;
+        height: 62.5rem;
+        background: url('../images/big.png');
+        background-size: cover;
+        padding: 7.5rem;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &.big-second{
+            background: url('../images/big2.png') !important;
+            display: block; 
+            padding-top: 21.9rem;
+            .projects__item-title{
+                font: 600 3.6rem $second-family;
+                letter-spacing: 0.05em;
+                color: $whitesystem;
+                margin-bottom: 2.5rem;
+            }
+            .projects__item-descr{
+                font: 400 2rem $font-family;
+                color: $whitesystem;
+                margin-bottom: 8.5rem;
+                max-width: 60rem;   
+            }
+        }
+    }
+    &__item-name{
+        font: 600 6.4rem $font-family;
+        text-transform: uppercase;
+        color: $whitesystem;   
+    }
+    &__item-descr{
+        font: 400 2rem $font-family;
+        color: $whitesystem; 
+    }
+}
+
+.section5{
+    position: relative;
+    .section__head{
+        position: absolute;
+        z-index: 777;
+    }
+    .section__logo{
+        color: $whitebrand;
+    }
+    .page__name{
+        color: $whitebrand;
+    }
+    .section__bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        z-index: 1;
+    }
+    .job__content{
+        position: relative;
+        padding-left: 19rem;
+        z-index: 777;
+    }
+    .job__title{
+        font: 600 7.5rem $second-family;
+        text-transform: uppercase;
+        color: $whitesystem;
+        margin-bottom: 5rem; 
+    }
+    .job__btn{
+        font: 400 1.8rem $font-family;
+        letter-spacing: 0.25em;
+        color: #000;
+        padding: 2.4rem 5.8rem;
+        background: #fff;
+    }
+}
+
+.section6{
+    padding-top: 7rem;
+    overflow: hidden !important;
+    .section__head{
+        position: absolute;
+        z-index: 777;
+    }
+    img{
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+    }
+    .retro__title{
+        font: 600 6.5rem $second-family;
+        letter-spacing: 0.05em;
+        color: $darksystem;
+        margin-bottom: 5rem;
+    }
+}
+
+.fp-watermark{
+    display: none;
+}
+
+:root {
+    --index: calc(1vw + 1vh); // Используем для определения размеров
+    --transition: cubic-bezier(0.1, 0.7, 0, 1); // Параметры для трансформации
+  }
+  
+  .custom-slider {
+    overflow: hidden;
+    .custom-slider-wrapper {
+      display: flex;
+      align-items: center; // Выстраиваем контент по вертикали по центру
+      justify-content: center; // Выстраиваем контент по горизонтали по центру
+      overflow: hidden; // Запрещаем скролл
+    width: 100%;
+      .custom-slider-items {
+        display: flex;
+        perspective: calc(var(--index) * 35); // Перспектива для 3D-эффектов
+        .custom-slider-item {
+          width: 23.3rem; // Ширина элемента
+          height: 65vh; // Высота элемента
+          background-size: cover; // Масштабирование изображения по размеру элемента
+          background-position: center; // Центрируем изображение
+          cursor: pointer; // Указываем, что элемент кликабельный
+          transition: 
+            transform 1.25s var(--transition), 
+            filter 3s var(--transition), 
+            width 1.25s var(--transition); // Параметры переходов
+          will-change: transform, filter, rotateY, width; // Указываем ожидаемые изменения для оптимизации
+          position: relative; // Нужно для правильного позиционирования псевдоэлементов
+  
+          &:hover {
+            filter: inherit; // Возвращаем оригинальный цвет
+            transform: translateZ(calc(var(--index) * 10)); // Поднимаем элемент по оси Z
+          }
+  
+          &::before,
+          &::after {
+            content: '';
+            position: absolute; // Обязательно для наложения
+            height: 100%; // Высота псевдоэлементов равна высоте элемента
+            width: var(--index); // Ширина псевдоэлементов
+            right: calc(var(--index) * -1); // Правый псевдоэлемент должен быть смещен
+          }
+  
+          &::after {
+            left: calc(var(--index) * -1); // Левый псевдоэлемент также смещён на ширину
+          }
+  
+          // Эффекты трансформации для соседних элементов справа от активного
+          &:hover + * {
+            filter: inherit;
+            transform: translateZ(calc(var(--index) * 8.5)) rotateY(35deg);
+            z-index: -1; // Задвигаем их назад
+          }
+  
+          // Повторяем для следующих элементов справа
+          &:hover + * + * {
+            transform: translateZ(calc(var(--index) * 5.6)) rotateY(40deg);
+            z-index: -2;
+          }
+  
+          &:hover + * + * + * {
+            transform: translateZ(calc(var(--index) * 2.5)) rotateY(30deg);
+            z-index: -3;
+          }
+  
+          &:hover + * + * + * + * {
+            transform: translateZ(calc(var(--index) * 0.6)) rotateY(15deg);
+            z-index: -4;
+          }
+  
+          // Эффекты трансформации для соседних элементов слева от активного
+          &:has(+ :hover) {
+            filter: inherit;
+            transform: translateZ(calc(var(--index) * 8.5)) rotateY(-35deg);
+          }
+  
+          // Повторяем для следующих элементов слева
+          &:has(+ * + :hover) {
+            transform: translateZ(calc(var(--index) * 5.6)) rotateY(-40deg);
+          }
+  
+          &:has(+ * + * + :hover) {
+            transform: translateZ(calc(var(--index) * 2.5)) rotateY(-30deg);
+          }
+  
+          &:has(+ * + * + * + :hover) {
+            transform: translateZ(calc(var(--index) * 0.6)) rotateY(-15deg);
+          }
+  
+          // Раскрываем активный блок по клику или фокусу
+          &:active,
+          &:focus {
+            width: 28vw; // Увеличиваем ширину активного элемента
+            filter: inherit; // Восстанавливаем цвет
+            z-index: 100; // Поднимаем выше остальных
+            transform: translateZ(calc(var(--index) * 10)); // Поднимаем по оси Z
+            margin: 0 0.45vw; // Добавляем отступы
+          }
+        }
+      }
+    }
+  }
+
+  .item11{
+    background: url("../images/01.jpg");
+  }
+  .item22{
+    background: url("../images/02.jpg");
+  }
+  .item33{
+    background: url("../images/03.jpg");
+  }
+  .item44{
+    background: url("../images/04.jpg");
+  }
+  .item55{
+    background: url("../images/05.jpg");
+  }
+  .item66{
+    background: url("../images/06.jpg");
+  }
+  .item77{
+    background: url("../images/07.jpg");
+  }
+  .item88{
+    background: url("../images/05.jpg");
+  }
+
+  .retro__navigation-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font: 300 2.5rem $font-family;
+    text-transform: uppercase;
+    text-align: center;
+    color: $darksystem;
+    margin-top: -6rem;
+    div{
+        margin-top: -1rem;
+    }
+  }
+  .custom-slider-items{
+    width: 100%;
+  }
+  .retro__navigation{
+    position: relative;
+    z-index: 777777;
+    width: 100%;
+    overflow: hidden;
+    svg{
+        width: 100%;
+    }
+  }
+
+.section3{
+    background: #E3EBF0;
+}
+
+  .idea{
+    padding-top: 10rem;
+    &__wrapper{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10rem;
+        svg{
+            position: absolute;
+            width: 158rem;
+            bottom: 0;
+            left: 7rem;
+        }
+    }
+    &__item{
+        border-radius: 2.5rem;
+        width: 53rem;
+        background: $whitesystem;
+        padding: 5rem 3.5rem;  
+        img{
+            display: block;
+            margin: auto;
+            margin-bottom: 5rem;
+            width: 26.8rem;
+            height: 26.2rem;
+            margin-top: -15.9rem;   
+        }  
+    }
+    &__title{
+        font: 600 6.5rem $second-family;
+        letter-spacing: 0.05em;
+        color:  $darksystem;  
+        span{
+            color: $brand;
+        } 
+    }
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 19rem;
+    }
+    &__text{
+        width: 64.3rem;
+        font: 400 2.5rem $font-family;
+        text-align: right;
+    }
+    &__name{
+        font: 600 4.5rem $font-family;
+        color: $brand;
+        margin-bottom: 2.5rem;
+    }
+    &__descr{
+        font: 400 1.8rem $font-family;
+        color: $darksystem;   
+    }
+  }
+
+  .time{
+    padding-bottom: 11rem;
+    padding-top: 10rem;
+    &__title{
+        font: 600 6.5rem $second-family;
+        letter-spacing: 0.05em;
+        color: $darksystem;
+        margin-bottom: 4rem;   
+    }
+    &__wrapper{
+        background: #fff;
+        padding: 3rem 3rem 0;
+        height: 20.8rem;
+        border-radius: 2.5rem;
+        display: flex;
+        gap: 3rem;
+        text-align: center;
+        font: 400 2.5rem $font-family;
+        text-align: center;
+        color: #000;
+        span{
+            font: 600 10rem $font-family;
+            letter-spacing: 0.05em;
+            color: $brand;
+            &:nth-child(1){
+                margin-top: -2rem;
+            } 
+            &:nth-child(2){
+                padding-top: 9rem;
+            } 
+        }
+    }
+  }
