@@ -476,7 +476,7 @@ nav button:hover{
         font: 600 6.5rem $second-family;
         letter-spacing: 0.05em;
         color: $darksystem;
-        margin-bottom: 5rem;
+        margin-bottom: 0rem;
     }
 }
 
@@ -498,9 +498,9 @@ nav button:hover{
       align-items: center; // Выстраиваем контент по вертикали по центру
       justify-content: center; // Выстраиваем контент по горизонтали по центру
       overflow: hidden;
-      padding-top: 10rem;
+      padding-top: 14rem;
         width: 65.5%;
-        height: 85vh;
+        height: 83vh;
         
       .custom-slider-items {
         display: flex;
