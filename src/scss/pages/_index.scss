@@ -497,13 +497,14 @@ nav button:hover{
       display: flex;
       align-items: center; // Выстраиваем контент по вертикали по центру
       justify-content: center; // Выстраиваем контент по горизонтали по центру
-      overflow: hidden;
-      padding-top: 14rem;
-        width: 65.5%;
+    //   overflow: hidden;
+      padding-top: 3rem;
+        width: 100%;
         height: 83vh;
         
       .custom-slider-items {
         display: flex;
+        justify-content: center;
         width: 1;
         perspective: calc(var(--index) * 35); // Перспектива для 3D-эффектов
         .custom-slider-item {
@@ -616,13 +617,13 @@ nav button:hover{
     background: url("../images/05.jpg");
   }
   .item66{
-    background: url("../images/06.jpg");
+    background: url("../images/01.jpg");
   }
   .item77{
-    background: url("../images/07.jpg");
+    background: url("../images/02.jpg");
   }
   .item88{
-    background: url("../images/05.jpg");
+    background: url("../images/07.jpg");
   }
 
   .retro__navigation-nav{
@@ -817,11 +818,12 @@ nav button:hover{
 
 .service {
     background: url('../images/history-section.png');
-    width: 200vh; /* Длина на два экрана */
+    max-width: 100vw; /* Длина на два экрана */
     height: 100vh;
     position: relative;
     overflow: hidden;
     z-index: 777;
+    background-size: cover;
    
 }
 .service__container {
@@ -835,6 +837,9 @@ nav button:hover{
     // gap: 20rem;
 }
 .service__item {
+}
+.scroll-section{
+    overflow: hidden;
 }
 .service__buttons {
     position: absolute;
@@ -904,6 +909,11 @@ nav button:hover{
         font: 400 1.8rem $font-family;
         color: #000;  
     }
+    .scroll-section__top{
+        &.static{
+            position: static;
+        }
+    }
 }
 
 .history__item.sec{
@@ -924,6 +934,10 @@ nav button:hover{
     align-items: center;
     width: 100%;
     left: 0;
+    transition: all 0.3s;
+    &.static{
+        opacity: 0;
+    }
 }
 .scroll-section__year{
     font: 400 2.5rem $font-family;
@@ -965,4 +979,12 @@ nav button:hover{
 .history__item-btn{
     position: relative;
     z-index: 77777777777777777777777;
+}
+
+.projects__action-content img{
+    width: 100%;
+    height: 100%;
+}
+.retro__navigation-nav{
+    display: none;
 }

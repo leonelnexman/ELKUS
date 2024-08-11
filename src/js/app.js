@@ -65,26 +65,24 @@ gsap.utils.toArray('.projects__item').forEach(item => {
 document.querySelector('.slider-num span').textContent = 1;
 
 
-var swiper = new Swiper('.custom-slider-wrapper', {
-    autoplay: false,
-    loop: true,
-    slidesPerView: "auto",
-    spaceBetween: 10,
-    navigation: {
-        prevEl: '.retro__navigation-prev',
-        nextEl: '.retro__navigation-next',
-    },
-    on: {
-        slideChange: function() {
-            var currentIndex = this.realIndex + 1; // Получаем индекс текущего слайда (начинается с 0, поэтому добавляем 1)
-            document.querySelector('.slider-number span').textContent = currentIndex;
-        }
-    }
-});
+// var swiper = new Swiper('.custom-slider-wrapper', {
+//     autoplay: false,
+//     loop: true,
+//     slidesPerView: "auto",
+//     spaceBetween: 10,
+//     navigation: {
+//         prevEl: '.retro__navigation-prev',
+//         nextEl: '.retro__navigation-next',
+//     },
+//     on: {
+//         slideChange: function() {
+//             var currentIndex = this.realIndex + 1; // Получаем индекс текущего слайда (начинается с 0, поэтому добавляем 1)
+//             document.querySelector('.slider-number span').textContent = currentIndex;
+//         }
+//     }
+// });
 
-// Инициализация начального номера слайда при загрузке
 document.querySelector('.slider-number span').textContent = 1;
-
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -97,7 +95,7 @@ mm.add('(min-width: 769px)', () => {
     tl.to('.service__container', {
         x: () => -(document.querySelector('.service__container').scrollWidth - window.innerWidth)
     });
-    
+
     // Создаем ScrollTrigger для основной анимации
     ScrollTrigger.create({
         animation: tl,
@@ -108,6 +106,13 @@ mm.add('(min-width: 769px)', () => {
         ease: 'none',
         pin: '.service',
         invalidateOnRefresh: true,
+        onUpdate: (self) => {
+            if (self.progress === 1) {
+                document.querySelector('.scroll-section__top').classList.add('static');
+            } else {
+                document.querySelector('.scroll-section__top').classList.remove('static');
+            }
+        }
     });
 
     // Анимация для увеличения ширины элемента .line span
