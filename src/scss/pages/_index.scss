@@ -797,3 +797,172 @@ nav button:hover{
     width: 23.5rem;
     height: 12.1rem;
 }
+
+.scroll-section{
+    position: relative;
+    min-height: 100vh;
+}
+
+.scroll-wrapper{
+    width: 300%;
+    padding-top: 30rem;
+}
+
+.scroll-section__bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.service {
+    background: url('../images/history-section.png');
+    width: 200vh; /* Длина на два экрана */
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    z-index: 777;
+   
+}
+.service__container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    top: 0;
+    // padding-left: 10rem;
+    // padding-right: 10rem;
+    // gap: 20rem;
+}
+.service__item {
+}
+.service__buttons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.service__title{
+    padding-top: 17rem;
+}
+// .service__title{
+//     min-width: 92rem !important;
+// }
+.history{
+    &__title{
+        font: 600 4.8rem $second-family;
+        letter-spacing: 0.05em;
+        span{
+            color: $brand;
+        }
+    }
+    &__name{
+        font: 600 20rem $font-family;
+        text-transform: uppercase;
+        color: $darksystem; 
+    }
+    &__inner{
+        padding-top: 15rem;
+        display: flex;
+        // align-items: center;
+        gap: 12.5rem;
+        padding: 15rem 10rem 0 15rem;
+    }
+    &__item{
+        img{
+            border-radius: 2.5rem;
+            width: 71rem;
+            margin-bottom: 11rem;
+        }
+    }
+    &__item-top{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5rem;
+    }
+    &__item-years{
+        font: 700 3.2rem $second-family;
+        letter-spacing: 0.05em;
+        color: $darksystem;   
+    }
+    &__item-btn{
+        padding: 2.1rem;
+        border: 0.2rem solid $brand;
+        border-radius: 2.5rem;
+        font: 400 1.6rem $font-family;
+        letter-spacing: 0.25em;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        svg{
+            width: 0.9rem;
+            height: 1.6rem;
+        }
+    }
+    &__item-text{
+        font: 400 1.8rem $font-family;
+        color: #000;  
+    }
+}
+
+.history__item.sec{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 11rem;
+    .history__item-content{
+        margin-top: 9rem;
+    }
+}
+
+.scroll-section__top{
+    position: sticky;
+    top: 1rem;
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    left: 0;
+}
+.scroll-section__year{
+    font: 400 2.5rem $font-family;
+    letter-spacing: 0.05em;
+    color: $darksystem; 
+    opacity: 0.25;
+    transition: all 0.3s;
+    padding: 1.3rem 5rem;
+    border-radius: 2.5rem;
+    &.active{
+        font: 500 2.5rem $font-family;
+        letter-spacing: 0.05em;
+        border: 0.1rem solid $brand;
+        border-radius: 2.5rem;
+        color: $brand;
+        opacity: 1;
+    }
+}
+.history__inner{
+    position: relative;
+}
+.line{
+    left: 0rem;
+    position: absolute;
+    width: 495rem;
+    top: 53rem;
+    left: 95rem;
+    height: 0.2rem;
+    background: $darksystem;
+    z-index: 777;
+    span{
+        display: block;
+        width: 0;
+        background: $brand;
+        height: 0.2rem;
+    }
+}
+
+.history__item-btn{
+    position: relative;
+    z-index: 77777777777777777777777;
+}
